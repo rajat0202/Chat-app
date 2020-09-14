@@ -31,7 +31,7 @@ const removeUser = (id) => {
 };
 
 const getUsers = (id) => {
-  return users.filter((user) => user.id === id);
+  return users.filter((user) => user.id === id)[0];
 };
 
 const getUsersRoom = (room) => {

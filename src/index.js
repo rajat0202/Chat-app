@@ -49,6 +49,7 @@ io.on("connection", (socket) => {
   socket.on("sendMessage", (message, cb) => {
     const user = getUsers(socket.id);
 
+    console.log(user.room);
     const filter = new bad();
 
     if (filter.isProfane(message)) {
